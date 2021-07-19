@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+    1.app.message修改数据,vue内部是怎么样监听message数据的改变
+    *Object.defineProperty -> 监听对象属性的改变
+
+  2.当数据发生改变,vue是如何知道要通知哪些
+    *发布订阅着模式
+  -->
+
+    <div id="app">{{message}}</div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                message: '哈哈'
+            }
+        })
+    </script>
+</body>
+
+</html>

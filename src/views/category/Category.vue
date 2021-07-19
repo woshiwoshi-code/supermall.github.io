@@ -1,0 +1,140 @@
+<template>
+  <div class="wrapper">
+     <ul class="content">
+    <li>分类的li1</li>
+    <li>分类的li2</li>
+    <li>分类的li3</li>
+    <li>分类的li4</li>
+    <li>分类的li5</li>
+    <li>分类的li6</li>
+    <li>分类的li7</li>
+    <li>分类的li8</li>
+    <li>分类的li9</li>
+    <li>分类的li10</li>
+    <li>分类的li11</li>
+    <li>分类的li12</li>
+    <li>分类的li13</li>
+    <li>分类的li14</li>
+    <li>分类的li15</li>
+    <li>分类的li16</li>
+    <li>分类的li17</li>
+    <li>分类的li18</li>
+    <li>分类的li19</li>
+    <li>分类的li20</li>
+    <li>分类的li21</li>
+    <li>分类的li22</li>
+    <li>分类的li23</li>
+    <li>分类的li24</li>
+    <li>分类的li25</li>
+    <li>分类的li26</li>
+    <li>分类的li27</li>
+    <li>分类的li28</li>
+    <li>分类的li29</li>
+    <li>分类的li30</li>
+    <li>分类的li31</li>
+    <li>分类的li32</li>
+    <li>分类的li33</li>
+    <li>分类的li34</li>
+    <li>分类的li35</li>
+    <li>分类的li36</li>
+    <li>分类的li37</li>
+    <li>分类的li38</li>
+    <li>分类的li39</li>
+    <li>分类的li40</li>
+    <li>分类的li41</li>
+    <li>分类的li42</li>
+    <li>分类的li43</li>
+    <li>分类的li44</li>
+    <li>分类的li45</li>
+    <li>分类的li46</li>
+    <li>分类的li47</li>
+    <li>分类的li48</li>
+    <li>分类的li49</li>
+    <li>分类的li50</li>
+    <li>分类的li51</li>
+    <li>分类的li52</li>
+    <li>分类的li53</li>
+    <li>分类的li54</li>
+    <li>分类的li55</li>
+    <li>分类的li56</li>
+    <li>分类的li57</li>
+    <li>分类的li58</li>
+    <li>分类的li59</li>
+    <li>分类的li60</li>
+    <li>分类的li61</li>
+    <li>分类的li62</li>
+    <li>分类的li63</li>
+    <li>分类的li64</li>
+    <li>分类的li65</li>
+    <li>分类的li66</li>
+    <li>分类的li67</li>
+    <li>分类的li68</li>
+    <li>分类的li69</li>
+    <li>分类的li70</li>
+    <li>分类的li71</li>
+    <li>分类的li72</li>
+    <li>分类的li73</li>
+    <li>分类的li74</li>
+    <li>分类的li75</li>
+    <li>分类的li76</li>
+    <li>分类的li77</li>
+    <li>分类的li78</li>
+    <li>分类的li79</li>
+    <li>分类的li80</li>
+    <li>分类的li81</li>
+    <li>分类的li82</li>
+    <li>分类的li83</li>
+    <li>分类的li84</li>
+    <li>分类的li85</li>
+    <li>分类的li86</li>
+    <li>分类的li87</li>
+    <li>分类的li88</li>
+    <li>分类的li89</li>
+    <li>分类的li90</li>
+    <li>分类的li91</li>
+    <li>分类的li92</li>
+    <li>分类的li93</li>
+    <li>分类的li94</li>
+    <li>分类的li95</li>
+    <li>分类的li96</li>
+    <li>分类的li97</li>
+    <li>分类的li98</li>
+    <li>分类的li99</li>
+    <li>分类的li100</li>
+  </ul>
+  </div>
+</template>
+
+<script>
+ import BScroll from 'better-scroll'
+  export default {
+    name: "Category",
+    data(){
+      return{
+        scroll:null
+      }
+    },
+    mounted() {
+      this.scroll= new BScroll(".wrapper",{
+         probeType:3,
+         pullUpLoad:true
+      })
+      this.scroll.on("scroll",(position)=>{
+        console.log(position);
+      })
+         this.scroll.on("pullingUp",()=>{
+        console.log("上拉加载更多");
+      })
+    },
+    components:{
+      BScroll
+    }
+  }
+</script>
+
+<style scoped>
+  .wrapper{
+    height: 150px;
+    background-color: red;
+  }
+</style>
